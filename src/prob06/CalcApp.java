@@ -21,20 +21,32 @@ public class CalcApp {
 			}
 			
 			String[] tokens = expression.split(" ");
+			
+			int a1=Integer.parseInt(tokens[0]);
+			int b1=Integer.parseInt(tokens[2]);
 			switch(tokens[1]) {
 				case "+":{
+					
+					Add a=new Add();
+					a.calculate(a1, b1);
 					
 					break;
 				}
 				case "-":{
+					Sub a=new Sub();
+					a.calculate(a1, b1);
 					
 					break;
 				}
 				case "*":{
+					Mul a=new Mul();
+					a.calculate(a1, b1);
 					
 					break;
 				}
 				case "/":{
+					Div a=new Div();
+					a.calculate(a1, b1);
 					
 					break;
 				}
